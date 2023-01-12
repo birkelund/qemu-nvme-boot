@@ -1,0 +1,51 @@
+[
+	{
+		"arch": "x86_64",
+		"machine": "q35",
+		"kernel": "bzImage",
+		"nic": "virtio"
+	},
+	{
+		"arch": "aarch64",
+		"machine": "virt",
+		"cpu": "cortex-a53",
+		"kernel": "Image",
+		"console": "ttyAMA0",
+		"nic": "virtio"
+	},
+	{
+		"arch": "riscv32",
+		"machine" : "virt",
+		"kernel": "Image",
+		"nic": "virtio-netdev"
+	},
+	{
+		"arch": "riscv64",
+		"machine" : "virt",
+		"kernel": "Image",
+		"nic": "virtio-netdev"
+	},
+	{
+		"arch": "sparc64",
+		"machine": "sun4v",
+		"cpu": "TI UltraSparc IIi",
+		"kernel": "vmlinux",
+		"nic": "e1000",
+		"extra_nvme_params": "bus=pciB"
+	},
+	{
+		"arch": "mips",
+		"machine": "malta",
+		"cpu": "mips32r6-generic",
+		"kernel": "vmlinux",
+		"nic": "pcnet",
+		"extra_kernel_params": "rootwait"
+	},
+	{
+		"arch": "mips64",
+		"machine": "malta",
+		"cpu": "I6400",
+		"kernel": "vmlinux",
+		"nic": "pcnet"
+	}
+]
