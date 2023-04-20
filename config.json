@@ -38,8 +38,14 @@
 		"machine": "malta",
 		"cpu": "mips32r6-generic",
 		"kernel": "vmlinux",
-		"nic": "pcnet",
-		"extra_kernel_params": "rootwait"
+		"nic": "pcnet"
+	},
+	{
+		"arch": "mipsel",
+		"machine": "malta",
+		"cpu": "mips32r6-generic",
+		"kernel": "vmlinux",
+		"nic": "pcnet"
 	},
 	{
 		"arch": "mips64",
@@ -47,5 +53,19 @@
 		"cpu": "I6400",
 		"kernel": "vmlinux",
 		"nic": "pcnet"
+	},
+	{
+		"arch": "mips64el",
+		"machine": "malta",
+		"cpu": "I6400",
+		"kernel": "vmlinux",
+		"nic": "pcnet"
+	},
+	{
+		"arch": "ppc64",
+		"machine": "pseries",
+		"cpu": "POWER7",
+		"kernel": "vmlinux",
+		"console": "hvc0"
 	}
 ]

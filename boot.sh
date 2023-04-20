@@ -19,7 +19,7 @@ stop_step=
 config="./config.json"
 timeout=45
 
-default_archs="x86_64 aarch64 riscv32 riscv64 mips mips64 sparc64"
+default_archs="x86_64 aarch64 riscv32 riscv64 mips mips64 mipsel mips64el ppc64 sparc64"
 default_nvme_params="serial=default,drive=d0"
 
 PASSED="[32;1mPASSED[0m"
@@ -48,7 +48,7 @@ Default architectures are:
     $default_archs
 
 EOF
-exit 1;
+exit 1
 }
 
 # runtime dependencies
